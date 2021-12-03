@@ -29,11 +29,4 @@ function calculateCommandDistance(commands: number[]): number {
     return commands.reduce((a, b) => a + b, 0);
 }
 
-console.log(calculateCommandDistance(verticalCommands));
-console.log(calculateCommandDistance(horizontalCommands));
-
-
-//const input: number[] = rawInput.map((i) => {
-//    return parseInt(i, 10)
-//});
-
+const sum = calculateCommandDistance(verticalCommands) * calculateCommandDistance(horizontalCommands);
